@@ -1,0 +1,153 @@
+.todoForm {
+	display: flex;
+	gap: 0.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.todoForm input {
+	flex: 1;
+	padding: 0.75rem;
+}
+
+.todoForm button {
+	background: var(--primary);
+	color: white;
+	padding: 0 1.5rem;
+	border-radius: var(--border-radius);
+}
+
+.todoForm button:hover {
+	background: var(--primary-light);
+}
+
+.todoList {
+	list-style: none;
+	margin: 1rem 0;
+}
+
+.todoItem {
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	border-radius: var(--border-radius);
+	margin-bottom: 0.5rem;
+	background: white;
+	box-shadow: var(--shadow);
+}
+
+.todoItem.completed .todoText {
+	text-decoration: line-through;
+	color: var(--gray);
+}
+
+.todoContent {
+	display: flex;
+	align-items: center;
+	flex: 1;
+	gap: 1rem;
+}
+
+.todoText {
+	flex: 1;
+}
+
+.todoActions {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.toggleBtn,
+.editBtn,
+.deleteBtn {
+	background: none;
+	padding: 0.5rem;
+	border-radius: 50%;
+	width: 2rem;
+	height: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.toggleBtn:hover {
+	background: rgba(72, 149, 239, 0.1);
+}
+
+.editBtn {
+	color: var(--primary);
+}
+
+.editBtn:hover {
+	background: rgba(67, 97, 238, 0.1);
+}
+
+.deleteBtn {
+	color: var(--danger);
+}
+
+.deleteBtn:hover {
+	background: rgba(247, 37, 133, 0.1);
+}
+
+.emptyMessage {
+	text-align: center;
+	padding: 2rem;
+	color: var(--gray);
+}
+
+.editForm {
+	display: flex;
+	flex: 1;
+	gap: 0.5rem;
+}
+
+.editForm input {
+	flex: 1;
+	padding: 0.5rem;
+}
+
+/* Add to existing todo.module.css */
+.editForm {
+	display: flex;
+	gap: 0.5rem;
+	width: 100%;
+}
+
+.editForm input {
+	flex: 1;
+	padding: 0.5rem;
+	font-size: 1rem;
+}
+
+.saveBtn,
+.cancelBtn {
+	background: none;
+	padding: 0.5rem;
+	border-radius: 50%;
+	width: 2rem;
+	height: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.saveBtn {
+	color: var(--success);
+}
+
+.saveBtn:hover {
+	background: rgba(76, 201, 240, 0.1);
+}
+
+.cancelBtn {
+	color: var(--danger);
+}
+
+.cancelBtn:hover {
+	background: rgba(247, 37, 133, 0.1);
+}
+
+.todoText {
+	cursor: pointer;
+	user-select: none;
+}
